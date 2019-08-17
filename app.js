@@ -25,7 +25,7 @@ app.use(express.static(`${__dirname}/public`));
 /* Routes
  ****************************************************************/
 app.get('/', (req, res) => {
-  //
+  res.render('index');
 });
 
 const port = process.env.PORT || 5000;
