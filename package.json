@@ -2,16 +2,16 @@
   "name": "e-book-sales-app",
   "version": "1.0.0",
   "description": "App to sell an e-book",
-  "author": "John Martin",
+  "author": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "stripe": "^7.8.0"
