@@ -1,1 +1,25 @@
-hello index
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Web Development
+      </h1>
+      <h2>Ultimate E-book</h2>
+      <p class="lead">Learn web development front to back</p>
+      <form action="/charge" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublishableKey}}"
+          data-amount="1500" data-currency="gbp" data-name="Web Development - Ultimate Ebook"
+          data-description="E-book written by John Martin" data-image="/img/marketplace.png" data-locale="auto">
+          </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-dark text-white btn-lg">Purchase For £15</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/book.png" alt="Book image" class="img-fluid" width="300px" />
+    </div>
+  </div>
+</section>
