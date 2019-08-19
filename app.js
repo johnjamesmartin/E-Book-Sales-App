@@ -25,7 +25,13 @@ app.use(express.static(`${__dirname}/public`));
 /* Routes
  ****************************************************************/
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    stripePublishableKey: process.env.STRIPE_PUB_KEY
+  });
+});
+
+app.get('/success', (req, res) => {
+  res.render('success');
 });
 
 app.post('/charge', (req, res) => {
