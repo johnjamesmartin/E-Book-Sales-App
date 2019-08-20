@@ -4,7 +4,7 @@ Using Node.js & Stripe, this web app allows us to sell an e-book (or any product
 
 ## Installation
 
-Download repo. You can open index.html in the dist directory to use immediately. Or you can cd into the root directory, install dependencies with npm install, and run npm run build to generate fresh dist directory with any changes you wish to make.
+Download repo. Install node modules and use the `npm run start` command to begin server
 
 ## License
 
